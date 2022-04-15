@@ -1,0 +1,30 @@
+@media (min-width:320px),(min-width:481px),(min-width:641px),(min-width:961px) {
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+   .section{
+       max-height: 600px;
+   }
+}
+@media (min-width:1025px),(min-width:1281px){
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */ 
+    .section{
+       max-height: 800px;
+   }
+}
+body{
+   padding: 0;
+   margin: 0;
+}
+.section{
+   position: relative;
+   margin: 0%;
+   width: 100%;
+   height: 95%;
+}
+.section img{
+   width: 100%;
+   height: 100%;
+}
