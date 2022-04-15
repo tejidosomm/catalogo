@@ -1,3 +1,17 @@
+/* Colors */
+.bg-white{
+    background-color: #ffffff;
+}
+.bg-primary {
+    background-color: #ede0d4;
+}
+.bg-secondary{
+    background-color: #ffeee6;
+}
+.bg-tertiary{
+    background-color: #f9e4dc;
+}
+
 @media (min-width:320px),(min-width:481px),(min-width:641px),(min-width:961px) {
     /* smartphones, iPhone, portrait 480x320 phones */ 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
