@@ -67,12 +67,11 @@ img.cover{
 }
 
 .autor{
-    font-family: "Aileron Light";
-    color: #865234;
+    font-family: "Aileron";
+    color: #80543c;
     font-size: 1.48em;
-    font-weight: lighter;
     position: absolute;
     transform: rotate(90deg);
     top: 9.2em;
-    left: -3em;
+    left: -3.2em;
 }
