@@ -5,11 +5,19 @@
 }
 @font-face {
     font-family:"Aileron";
-    src: url("resources/fonts/Aileron-Regular.otf") format("truetype");
+    src: url("resources/fonts/aileron/Aileron-Regular.otf") format("truetype");
 }
 @font-face {
     font-family:"Aileron Light";
-    src: url("resources/fonts/Aileron-Light.otf") format("truetype");
+    src: url("resources/fonts/aileron/Aileron-Light.otf") format("truetype");
+}
+@font-face {
+    font-family:"Aileron Italic";
+    src: url("resources/fonts/aileron/Aileron-Italic.otf") format("truetype");
+}
+@font-face {
+    font-family:"Aileron Bold";
+    src: url("resources/fonts/aileron/Aileron-Bold.otf") format("truetype");
 }
 /* Colors */
 .bg-white{
@@ -32,14 +40,89 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
    .section{
        max-height: 600px;
-   }
+    }
+    .title{
+        font-family: "Moontime";
+        position: absolute;
+        font-size: 6em;
+        color: #80543c;
+        left: 0.6em;
+        top: 0.4em;
+    }
+
+    .subtitle{
+        font-family: "Aileron Italic";
+        position: absolute;
+        font-size: 2em;
+        color: #80543c;
+        left: 1.75em;
+        top: 5em;
+    }
+
+    .about{
+        font-family: "Aileron Bold";
+        position: absolute;
+        font-size: 2em;
+        color: #80543c;
+        left: 1.75em;
+        top: 9em;
+    }
+
+    .description {
+        font-family: "Aileron Light";
+        position: absolute;
+        font-size: 1.4em;
+        color: #80543c;
+        left: 2.5em;
+        top: 14em;
+        width: 80%;
+        overflow-wrap: break-word;
+    }
 }
 @media (min-width:1025px),(min-width:1281px){
     /* big landscape tablets, laptops, and desktops */
     /* hi-res laptops and desktops */ 
     .section{
        max-height: 800px;
-   }
+    }
+    .title{
+        font-family: "Moontime";
+        text-shadow: rgb(222, 220, 220) 1px 5px 5px;
+        position: absolute;
+        font-size: 8em;
+        color: #80543c;
+        left: 0.5em;
+        top: 0.4em;
+    }
+
+    .subtitle{
+        font-family: "Aileron Italic";
+        position: absolute;
+        font-size: 2.4em;
+        color: #80543c;
+        left: 1.75em;
+        top: 6em;
+    }
+
+    .about{
+        font-family: "Aileron Bold";
+        position: absolute;
+        font-size: 2.4em;
+        color: #80543c;
+        left: 1.75em;
+        top: 10em;
+    }
+
+    .description {
+        font-family: "Aileron Light";
+        position: absolute;
+        font-size: 1.7em;
+        color: #80543c;
+        left: 2.5em;
+        top: 15.2em;
+        width: 80%;
+        overflow-wrap: break-word;
+    }
 }
 body{
    padding: 0;
@@ -51,6 +134,12 @@ body{
    width: 100%;
    height: 95%;
 }
+.section-space{
+    position: relative;
+    margin: 0%;
+    width: 100%;
+    height: 5%;
+ }
 .section img{
    width: 100%;
    height: 100%;
@@ -60,10 +149,22 @@ img.cover{
     height: 100%;
     float: left;
  }
-.name{
-    font-family: "Moontime";
-    font-size: 3em;
-    color: #865234;
+ .about-section {
+     position: absolute;
+     width: 70%;
+     height: 100%;
+ }
+ .about-image {
+    position: absolute;
+    width: 30%;
+    right: 0%;
+    height: 100%;
+}
+.about-image img{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 80%;
 }
 
 .autor{
