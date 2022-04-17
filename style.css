@@ -1,3 +1,16 @@
+/* Font */
+@font-face {
+    font-family:"Moontime";
+    src: url("resources/fonts/MoonTime-Regular-1.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Aileron";
+    src: url("resources/fonts/Aileron-Regular.otf") format("truetype");
+}
+@font-face {
+    font-family:"Aileron Light";
+    src: url("resources/fonts/Aileron-Light.otf") format("truetype");
+}
 /* Colors */
 .bg-white{
     background-color: #ffffff;
@@ -41,4 +54,25 @@ body{
 .section img{
    width: 100%;
    height: 100%;
+}
+img.cover{
+    width: 50%;
+    height: 100%;
+    float: left;
+ }
+.name{
+    font-family: "Moontime";
+    font-size: 3em;
+    color: #865234;
+}
+
+.autor{
+    font-family: "Aileron Light";
+    color: #865234;
+    font-size: 1.48em;
+    font-weight: lighter;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 9.2em;
+    left: -3em;
 }
