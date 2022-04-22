@@ -104,6 +104,19 @@ html, body {
         font-size: 1em;
         color: #80543c;
     }
+
+    .author-rights::before{
+        content: '';
+        position: absolute;
+        left: -1.68em;
+        top: 0.9em;
+        border-left: 1.3em solid transparent;
+        border-right: 1.3em solid transparent;
+        border-bottom: 0.8em solid #805538;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        display: inline-block;
+    }
 }
 @media (min-width:1025px),(min-width:1281px){
     /* big landscape tablets, laptops, and desktops */
@@ -170,6 +183,19 @@ html, body {
         font-family: "Aileron Light";
         font-size: 1.25em;
         color: #80543c;
+    }
+
+    .author-rights::before{
+        content: '';
+        position: absolute;
+        left: -2.18em;
+        top: 1.2em;
+        border-left: 1.7em solid transparent;
+        border-right: 1.7em solid transparent;
+        border-bottom: 1em solid #805538;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        display: inline-block;
     }
 }
 body{
@@ -287,8 +313,8 @@ img.cover{
     width: 20%;
     height: 7%;
     line-height: 40px;
-    padding-right: 3px;
-    text-align: right;
+    padding-left: 3px;
+    text-align: left;
     background-color: #805538;
     color: #fefcfc;
     font-family: "Aileron Bold";
