@@ -1,20 +1,21 @@
 self.addEventListener('install', function(event) {
+    self.skipWaiting();
     event.waitUntil(
       caches.open('main').then(function(cache) {
         return cache.addAll(
           [
-            '/catalogo/',
-            '/catalogo/manifest.json',
-            '/catalogo/index.html',
-            '/catalogo/style.css',
-            '/catalogo/resources/image/page1.webp',
-            '/catalogo/resources/image/page2.webp',
-            '/catalogo/resources/image/page3.webp',
-            '/catalogo/resources/image/page4.webp',
-            '/catalogo/resources/image/page5.webp',
-            '/catalogo/resources/image/page6.webp',
-            '/catalogo/resources/image/page7.webp',
-            '/catalogo/assets/favicon-196.png'
+            '/',
+            '/manifest.json',
+            '/index.html',
+            '/style.css',
+            '/resources/image/page1.webp',
+            '/resources/image/page2.webp',
+            '/resources/image/page3.webp',
+            '/resources/image/page4.webp',
+            '/resources/image/page5.webp',
+            '/resources/image/page6.webp',
+            '/resources/image/page7.webp',
+            '/assets/favicon-196.png'
           ]
         );
       })
